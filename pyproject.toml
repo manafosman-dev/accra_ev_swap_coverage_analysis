@@ -1,0 +1,16 @@
+[project]
+name = "accra-ev-swap-coverage-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "folium>=0.20.0",
+    "geopandas>=1.0.1",
+    "ipykernel>=6.31.0",
+    "jupyterlab>=4.5.10",
+    "mapclassify>=2.8.1",
+    "matplotlib>=3.9.4",
+    "osmx>=0.0.5",
+    "pandas>=2.3.3",
+]
