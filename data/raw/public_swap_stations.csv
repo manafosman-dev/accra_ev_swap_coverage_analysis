@@ -1,0 +1,9 @@
+analysis_id,source_station_id,station_area,landmark,latitude,longitude,coordinate_quality,operator,source,source_accessed_date
+PUB001,Station 002,Abelemkpe,Near Pan African TV,5.6131389,-0.2205278,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB002,Station 003,Adenta,Housing Down,5.708822,-0.150986,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB003,Station 004,Kaneshie,Near Vitamilk,5.5706667,-0.2394444,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB004,Station 005,Kokomlemle,Opposite Auto Z,5.577616,-0.215024,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB005,Station 006,Spintex,Adjacent Ecobank,5.62865,-0.09,Landmark proxy,Kofa,Ghana Energy Commission,2026-08-12
+PUB006,Station 007,Aviation,Aviation Social Centre,5.6011828,-0.1757488,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB007,Station 008,Osu,Osu,5.5628073,-0.1876698,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
+PUB008,,Haatso,ShaQ Express,5.6651767,-0.2020037,Public map coordinate,Kofa,Ghana Energy Commission,2026-08-12
