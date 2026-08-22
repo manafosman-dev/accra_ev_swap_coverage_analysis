@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_edda4970db9f606681f1906a98d8dd61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_edda4970db9f606681f1906a98d8dd61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_edda4970db9f606681f1906a98d8dd61 = L.map(
+                "map_edda4970db9f606681f1906a98d8dd61",
+                {
+                    center: [5.628490869820576, -0.17598319371548493],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aad20c597b661fc5b47703cd47768dc2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aad20c597b661fc5b47703cd47768dc2.addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var circle_marker_61e9fb3984034faad49a11d07625ddbf = L.circleMarker(
+                [5.6131389, -0.22052779999999983],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_61e9fb3984034faad49a11d07625ddbf.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e012b4f798fbd2af11d841d830dc321 = L.circleMarker(
+                [5.708822, -0.1509859999999999],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_4e012b4f798fbd2af11d841d830dc321.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d95ab05d962ec20c881ce274140093e = L.circleMarker(
+                [5.5706667, -0.23944440000000006],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_0d95ab05d962ec20c881ce274140093e.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad694c3a5deb17d478a1406b772aff37 = L.circleMarker(
+                [5.577616000000001, -0.21502399999999963],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_ad694c3a5deb17d478a1406b772aff37.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_670e2b4fbc801a9920d92e401161c862 = L.circleMarker(
+                [5.6286499999999995, -0.08999999999999918],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_670e2b4fbc801a9920d92e401161c862.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bbc606cf4d81ff74d2454c5f2d3227f = L.circleMarker(
+                [5.601182799999999, -0.17574879999999943],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_9bbc606cf4d81ff74d2454c5f2d3227f.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a827b8c3629c82d7cec619b262cf7fc = L.circleMarker(
+                [5.5628073, -0.18766980000000008],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_4a827b8c3629c82d7cec619b262cf7fc.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c0a354a619bcdb45b0c956979b244a7 = L.circleMarker(
+                [5.665176699999999, -0.20200369999999984],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            circle_marker_4c0a354a619bcdb45b0c956979b244a7.bindTooltip(
+                `<div>
+                     Existing station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9308c996054b75521e0563cba9e6a002 = L.marker(
+                [5.5510239493538185, -0.2206474177767537],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_07a5c7a280a61f2d432aa0e4422b50cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dd9c61f845e234010d825e050357565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40b4caf2026ee6a2511b830b950962b9 = $(`<div id="html_40b4caf2026ee6a2511b830b950962b9" style="width: 100.0%; height: 100.0%;"><b>1. Old Fadama</b><br>Nearby demand locations: 72<br>Nearest existing station: 3.01 km</div>`)[0];
+                popup_7dd9c61f845e234010d825e050357565.setContent(html_40b4caf2026ee6a2511b830b950962b9);
+            
+        
+
+        marker_9308c996054b75521e0563cba9e6a002.bindPopup(popup_7dd9c61f845e234010d825e050357565)
+        ;
+
+        
+    
+    
+            marker_9308c996054b75521e0563cba9e6a002.bindTooltip(
+                `<div>
+                     1. Old Fadama
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9308c996054b75521e0563cba9e6a002.setIcon(icon_07a5c7a280a61f2d432aa0e4422b50cb);
+            
+    
+            var marker_96a9454848f80993d533d1c9c032a47c = L.marker(
+                [5.618614539494768, -0.24806379552862567],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_97f4370c979c0aecab28e8f4083e6a30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_180ac1733dde99003e435a01d2079afc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fce0bfad45296a55b12e3d059941ff3 = $(`<div id="html_6fce0bfad45296a55b12e3d059941ff3" style="width: 100.0%; height: 100.0%;"><b>2. Nii Ankraman</b><br>Nearby demand locations: 56<br>Nearest existing station: 3.11 km</div>`)[0];
+                popup_180ac1733dde99003e435a01d2079afc.setContent(html_6fce0bfad45296a55b12e3d059941ff3);
+            
+        
+
+        marker_96a9454848f80993d533d1c9c032a47c.bindPopup(popup_180ac1733dde99003e435a01d2079afc)
+        ;
+
+        
+    
+    
+            marker_96a9454848f80993d533d1c9c032a47c.bindTooltip(
+                `<div>
+                     2. Nii Ankraman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96a9454848f80993d533d1c9c032a47c.setIcon(icon_97f4370c979c0aecab28e8f4083e6a30);
+            
+    
+            var marker_f985ee28ff1d749de6deea9b456fd0ce = L.marker(
+                [5.692095857871943, -0.023033283835086543],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_7f77a2a5b17d10e919fd60500a6bbac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55c5f82361b85a1d578afdb886aae2d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_992f20d4f8268f6ce0c0101a4bb97659 = $(`<div id="html_992f20d4f8268f6ce0c0101a4bb97659" style="width: 100.0%; height: 100.0%;"><b>3. Community 22</b><br>Nearby demand locations: 46<br>Nearest existing station: 10.22 km</div>`)[0];
+                popup_55c5f82361b85a1d578afdb886aae2d6.setContent(html_992f20d4f8268f6ce0c0101a4bb97659);
+            
+        
+
+        marker_f985ee28ff1d749de6deea9b456fd0ce.bindPopup(popup_55c5f82361b85a1d578afdb886aae2d6)
+        ;
+
+        
+    
+    
+            marker_f985ee28ff1d749de6deea9b456fd0ce.bindTooltip(
+                `<div>
+                     3. Community 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f985ee28ff1d749de6deea9b456fd0ce.setIcon(icon_7f77a2a5b17d10e919fd60500a6bbac6);
+            
+    
+            var marker_af75c4e5d9ae1cfa5b1f7cdff2e392b4 = L.marker(
+                [5.6415927011069495, -0.17606198560588918],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_1f2f5d0cf0204d25581fc1b217168aea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_390760b2609b3d1fc91cfe259efb644d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c71f7b7247355528c434d4a6da410cf1 = $(`<div id="html_c71f7b7247355528c434d4a6da410cf1" style="width: 100.0%; height: 100.0%;"><b>4. East Legon Extension</b><br>Nearby demand locations: 38<br>Nearest existing station: 3.89 km</div>`)[0];
+                popup_390760b2609b3d1fc91cfe259efb644d.setContent(html_c71f7b7247355528c434d4a6da410cf1);
+            
+        
+
+        marker_af75c4e5d9ae1cfa5b1f7cdff2e392b4.bindPopup(popup_390760b2609b3d1fc91cfe259efb644d)
+        ;
+
+        
+    
+    
+            marker_af75c4e5d9ae1cfa5b1f7cdff2e392b4.bindTooltip(
+                `<div>
+                     4. East Legon Extension
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af75c4e5d9ae1cfa5b1f7cdff2e392b4.setIcon(icon_1f2f5d0cf0204d25581fc1b217168aea);
+            
+    
+            var marker_83e9fd45f364f5125d6c9134b5feab49 = L.marker(
+                [5.591469072682259, -0.2569286739086978],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_aa3ee2f1be52aa1953c5bd3c8cecffbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7da67b9416c4ec9119f7be8e903d5f8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee1042e61364a9c9b02b41e33307b54e = $(`<div id="html_ee1042e61364a9c9b02b41e33307b54e" style="width: 100.0%; height: 100.0%;"><b>5. Hong Kong</b><br>Nearby demand locations: 35<br>Nearest existing station: 3.01 km</div>`)[0];
+                popup_7da67b9416c4ec9119f7be8e903d5f8b.setContent(html_ee1042e61364a9c9b02b41e33307b54e);
+            
+        
+
+        marker_83e9fd45f364f5125d6c9134b5feab49.bindPopup(popup_7da67b9416c4ec9119f7be8e903d5f8b)
+        ;
+
+        
+    
+    
+            marker_83e9fd45f364f5125d6c9134b5feab49.bindTooltip(
+                `<div>
+                     5. Hong Kong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83e9fd45f364f5125d6c9134b5feab49.setIcon(icon_aa3ee2f1be52aa1953c5bd3c8cecffbb);
+            
+    
+            var marker_66ab0e31f5952f2f2dc32c16e81bf973 = L.marker(
+                [5.650276267996968, -0.2392238501149488],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_30b82b67903310e901f42ab229f0c0e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e515d63544244a68d1e897cf17f75de4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35ed8aef877fae34fc630a687388dfb4 = $(`<div id="html_35ed8aef877fae34fc630a687388dfb4" style="width: 100.0%; height: 100.0%;"><b>6. Taifa</b><br>Nearby demand locations: 34<br>Nearest existing station: 4.45 km</div>`)[0];
+                popup_e515d63544244a68d1e897cf17f75de4.setContent(html_35ed8aef877fae34fc630a687388dfb4);
+            
+        
+
+        marker_66ab0e31f5952f2f2dc32c16e81bf973.bindPopup(popup_e515d63544244a68d1e897cf17f75de4)
+        ;
+
+        
+    
+    
+            marker_66ab0e31f5952f2f2dc32c16e81bf973.bindTooltip(
+                `<div>
+                     6. Taifa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66ab0e31f5952f2f2dc32c16e81bf973.setIcon(icon_30b82b67903310e901f42ab229f0c0e8);
+            
+    
+            var marker_05e524296901a397c8f3776b784f5c74 = L.marker(
+                [5.677722469251134, -0.17625936123497268],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_c68959eb2a0c1d3c00d11a6cf76f9145 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4f8e7ad6d2baba0a5b9a3373b8fe03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30a89283348abac8ab070a6a9cce6411 = $(`<div id="html_30a89283348abac8ab070a6a9cce6411" style="width: 100.0%; height: 100.0%;"><b>7. North Legon</b><br>Nearby demand locations: 34<br>Nearest existing station: 3.18 km</div>`)[0];
+                popup_5b4f8e7ad6d2baba0a5b9a3373b8fe03.setContent(html_30a89283348abac8ab070a6a9cce6411);
+            
+        
+
+        marker_05e524296901a397c8f3776b784f5c74.bindPopup(popup_5b4f8e7ad6d2baba0a5b9a3373b8fe03)
+        ;
+
+        
+    
+    
+            marker_05e524296901a397c8f3776b784f5c74.bindTooltip(
+                `<div>
+                     7. North Legon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05e524296901a397c8f3776b784f5c74.setIcon(icon_c68959eb2a0c1d3c00d11a6cf76f9145);
+            
+    
+            var marker_12761aa6103a6e7601709c5fbc4620d2 = L.marker(
+                [5.651584267919176, 0.004231961260678638],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_fbd587ef301e014e93c0b84152f4efcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b07539dfa293b52ca75f4dd518da9691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56d98e080654dcb53501873389546262 = $(`<div id="html_56d98e080654dcb53501873389546262" style="width: 100.0%; height: 100.0%;"><b>8. Community 1</b><br>Nearby demand locations: 33<br>Nearest existing station: 10.75 km</div>`)[0];
+                popup_b07539dfa293b52ca75f4dd518da9691.setContent(html_56d98e080654dcb53501873389546262);
+            
+        
+
+        marker_12761aa6103a6e7601709c5fbc4620d2.bindPopup(popup_b07539dfa293b52ca75f4dd518da9691)
+        ;
+
+        
+    
+    
+            marker_12761aa6103a6e7601709c5fbc4620d2.bindTooltip(
+                `<div>
+                     8. Community 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12761aa6103a6e7601709c5fbc4620d2.setIcon(icon_fbd587ef301e014e93c0b84152f4efcc);
+            
+    
+            var marker_a69179e1956b63cdd30acadbd9a55f0c = L.marker(
+                [5.6417398911495695, -0.1490129237621923],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_1b99441bfeee025aa44a27f33b4a89d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36a30da5d7edc253e7045852031b749d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f0f835de74f01810b0999d19f42e964 = $(`<div id="html_3f0f835de74f01810b0999d19f42e964" style="width: 100.0%; height: 100.0%;"><b>9. East Legon</b><br>Nearby demand locations: 32<br>Nearest existing station: 5.38 km</div>`)[0];
+                popup_36a30da5d7edc253e7045852031b749d.setContent(html_3f0f835de74f01810b0999d19f42e964);
+            
+        
+
+        marker_a69179e1956b63cdd30acadbd9a55f0c.bindPopup(popup_36a30da5d7edc253e7045852031b749d)
+        ;
+
+        
+    
+    
+            marker_a69179e1956b63cdd30acadbd9a55f0c.bindTooltip(
+                `<div>
+                     9. East Legon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a69179e1956b63cdd30acadbd9a55f0c.setIcon(icon_1b99441bfeee025aa44a27f33b4a89d2);
+            
+    
+            var marker_e6e6275b00cba18757cbcad93f2dbdec = L.marker(
+                [5.568789681379173, -0.27483260664836145],
+                {
+}
+            ).addTo(map_edda4970db9f606681f1906a98d8dd61);
+        
+    
+            var icon_e4f8cea305262705204fb14a49265cf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53ca7595f04f4e65430a8642bbbfe5d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9c7bb98864f7e563a68ced5964098c1 = $(`<div id="html_e9c7bb98864f7e563a68ced5964098c1" style="width: 100.0%; height: 100.0%;"><b>10. Odorkor</b><br>Nearby demand locations: 29<br>Nearest existing station: 3.93 km</div>`)[0];
+                popup_53ca7595f04f4e65430a8642bbbfe5d0.setContent(html_e9c7bb98864f7e563a68ced5964098c1);
+            
+        
+
+        marker_e6e6275b00cba18757cbcad93f2dbdec.bindPopup(popup_53ca7595f04f4e65430a8642bbbfe5d0)
+        ;
+
+        
+    
+    
+            marker_e6e6275b00cba18757cbcad93f2dbdec.bindTooltip(
+                `<div>
+                     10. Odorkor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6e6275b00cba18757cbcad93f2dbdec.setIcon(icon_e4f8cea305262705204fb14a49265cf6);
+            
+</script>
+</html>
